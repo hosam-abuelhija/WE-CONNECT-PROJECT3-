@@ -1,0 +1,86 @@
+{
+    "Employees" : [
+    {
+    "UserID":"1", 
+    "FullName":"Rania Alhasi",
+    "Job title":"Full Stack Developer",
+    "PhoneNumber":"0794851478",
+    "EmailAddress":"raniaalhasi@gmail.com",
+    "Salary":"1200$"
+    },
+    {
+    "UserID":"2",
+    "FullName":"Malik Ibdah",
+    "Job title":"Full Stack Developer",
+    "PhoneNumber":"0787758381",
+    "EmailAddress":"malikibdah@gmail.com",
+    "Salary":"1200$"
+    },
+       
+    {
+    "UserID":"3",
+    "FullName":"Rawaah Ababneh",
+    "Job title":"Full Stack Developer",
+    "PhoneNumber":"0787828385",
+    "EmailAddress":"rawaahabedelrahman@gmail.com",
+    "Salary":"1200$"
+    },
+    {
+    "UserID":"4",
+   "FullName":"Sarah Alshorman",
+    "Job title":"Full Stack Developer",
+    "PhoneNumber":"0787828383",
+    "EmailAddress":"sarahalshorman@gmail.com"
+    ,"Salary":"1200$"
+    },
+    {
+    "UserID":"5",
+    "FullName":"Hussam Abu AlHayja",
+     "Job title":"Full Stack Developer",
+     "PhoneNumber":"0797828384",
+     "EmailAddress":"hussamabualHayja@gmail.com",
+     "Salary":"1200$"
+    },
+    {
+    "UserID":"6",
+    "FullName":"Hadeel Alzoubi",
+     "Job title":"Full Stack Developer",
+     "PhoneNumber":"0787828384",
+     "EmailAddress":"hadeelalzoubi@gmail.com" ,
+      "Salary":"1200$"
+    },
+    {
+    "UserID":"7",
+    "FullName":"Shrouq Alzoubi",
+    "Job title":"Full Stack Developer",
+    "PhoneNumber":"0787811385",
+    "EmailAddress":"shrouqalzoubi@gmail.com",
+    "Salary":"1200$"
+    },
+   
+   {  "UserID":"8",
+   "FullName":"Aseel shatnawi",
+   "Job title":"Full Stack Developer",
+   
+   "PhoneNumber":"0787004209",
+   "EmailAddress":"aseelshatnawi@gmail.com", 
+   "Salary":"1200$"},
+    {
+    "UserID":"9",
+    "FullName":"Omran Ababneh",
+    "Job title":"Full Stack Developer",
+    "PhoneNumber":"0797828381",
+    "EmailAddress":"omranababneh@gmail.com",
+    "Salary":"1200$"
+    },
+    {
+    "UserID":"10",
+    "FullName":"Omar Alzoubi",
+    "Job title":"Full Stack Developer",
+  
+    "PhoneNumber":"0789828384",
+    "EmailAddress":"omaralzoubi@gmail.com" ,
+    "Salary":"1200$"
+    }
+    ]
+}

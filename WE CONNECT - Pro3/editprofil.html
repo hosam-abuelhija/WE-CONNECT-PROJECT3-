@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>Edit Profile </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Link For Font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="hadeel/EditProfil/editprofil.css">
+
+</head>
+<header class="header_section" >
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            WE CONNECT
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Tools</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="profile.html" id="username">My Profile</a>
+            </li>
+            <li class="nav-item" id="logout" >
+              <a class="nav-link"  onclick="document.location='hrpanel.html'"> <i class="fa fa-user" aria-hidden="true"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+<body>
+
+<div class="container" id="editProfileForm">
+<div class="row gutters">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<div class="card h-100">
+<div class="card-body">
+<div class="account-settings">
+<div class="user-profile">
+    <br><br><br><br>
+
+    <div class="file btn btn-lg ">
+      
+      <label for="fileid">
+        <img src="" id="img" alt="" width="100px" height="100px">
+      </label>
+        <br>
+        <label for="fileid"> <i class="fa-solid fa-camera"></i></label>
+       
+          <br>
+          <input type="file" id="fileid" >
+
+</div>
+<!-- <h5 class="user-name">Yuki Hayashi</h5> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+<div class="card h-100">
+<div class="card-body">
+<div class="row gutters">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<h6 class="mb-2 ">Personal Details</h6>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+<div class="form-group">
+<label for="fullName">Full Name</label>
+<input type="text" class="form-control" id="fullname" placeholder="Full Name">
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" class="form-control" id="email" placeholder="email">
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+<div class="form-group">
+<label for="phone">Phone</label>
+<input type="text" class="form-control" id="phone" placeholder="phone number">
+</div>
+</div>
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+<div class="form-group">
+<label for="Street">Address</label>
+<input type="name" class="form-control" id="address" placeholder="Your Address">
+</div>
+</div>
+</div>
+<div class="row gutters">
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+<div class="form-group">
+<label for="sTate">Old Passowrd</label>
+<input type="password" class="form-control" id="old" placeholder="Old Passowrd">
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+<div class="form-group">
+<label for="zIp">New Passowrd</label>
+<input type="password" class="form-control" id="new" placeholder="New Passowrd">
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-13">
+    <div class="form-group">
+    <label for="zIp">Confirm Passowrd</label>
+    <input type="password" class="form-control" id="confirm" placeholder="Confirm Passowrd">
+    </div>
+    </div>
+</div>
+<br><br>
+<div class="row gutters">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<div class="text-right">
+<button type="button" id="cancel" name="submit" class="btncancel"
+ style="background-color:  #0f054c ; color: white; border-radius: 20px; font-size:15px;" 
+ onclick="document.location='Profile.html'">
+ Cancel
+</button>
+<button type="button" id="update" name="submit" class="btnupdate" 
+style="background-color:  #0f054c ; color: white; border-radius: 20px; font-size:15px;"
+onclick="document.location='editprofil.html'"
+>
+Update
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+    
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/fvjBrVEM3UUVomiw8">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +962 712345678
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  weconnect@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              Delivering excellence in customer service through innovative solutions and dedicated support.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="rawaa/about.html">
+                About
+              </a>
+              <a class="" href="contact.html">
+                Contact
+              </a>
+              
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          
+          <div class="img-box">
+            <img src="/images/Red_and_Gray_Minimalist_Social_Media_Business_Company_Logo__1_-removebg-preview.png" alt="" style="width: 250px;">
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By We Connect
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+ 
+<script src="hadeel/EditProfil/editprofil.js"></script>
+<script data-cfasync="false" src="hadeel/EditProfil/editprofil.js"></script><script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

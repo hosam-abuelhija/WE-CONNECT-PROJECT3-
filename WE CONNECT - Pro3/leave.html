@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> We Connect </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffffe4;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.form-row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #50505014;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+    width: 200px;
+    align-self: center;
+}
+.submit-group {
+    flex: 0 0 auto; /* Ensure the submit button takes only necessary space */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex: 1 1 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              WE CONNECT
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="service.html">Tools<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="profile.html">PROFILE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hrpanel.html"> <i class="fa fa-user" aria-hidden="true"></i>log out</a>
+              </li>
+              <!-- <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      
+        <div class="container1">
+            <h1>Leave Application Form</h1>
+            <form id="leaveForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <select id="name" name="name" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason:</label>
+                        <input type="text" id="reason" name="reason" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="datetime-local" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (hours):</label>
+                        <input type="number" id="duration" name="duration" required>
+                    </div>
+                        
+                    
+                </div>
+                <div class="form-group submit-group">
+                    <button type="submit" style="background-color: #00bbf0;">Submit</button>
+                    </div>
+                
+            </form>
+            
+            
+            <br><br>
+            <h2>Leave Applications</h2>
+            <table id="applicationsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Reason</th>
+                        <th>Time</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <!-- end slider section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By We Connect
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+const leaveForm = document.getElementById('leaveForm');
+const applicationsTable = document.getElementById('applicationsTable').getElementsByTagName('tbody')[0];
+const nameSelect = document.getElementById('name');
+
+function loadEmployeeNames() {
+        fetch('rawaa/infoemployees.json')
+            .then(response => response.json())
+            .then(data => {
+                data.Employees.forEach(infoemployees => {
+                    const option = document.createElement('option');
+                    option.value = infoemployees.FullName;
+                    option.textContent = infoemployees.FullName;
+                    nameSelect.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error fetching employee names:', error));
+    }
+function loadApplications() {
+    const applications = JSON.parse(localStorage.getItem('leaveApplications')) || [];
+    applicationsTable.innerHTML = '';
+    applications.forEach(application => {
+        const row = applicationsTable.insertRow();
+        row.insertCell(0).textContent = application.name;
+        row.insertCell(1).textContent = application.reason;
+        row.insertCell(2).textContent = application.time;
+        row.insertCell(3).textContent = application.duration;
+    });
+}
+
+function saveApplication(application) {
+    const applications = JSON.parse(localStorage.getItem('leaveApplications')) || [];
+    applications.push(application);
+    localStorage.setItem('leaveApplications', JSON.stringify(applications));
+}
+
+leaveForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const application = {
+        name: e.target.name.value,
+        reason: e.target.reason.value,
+        time: e.target.time.value,
+        duration: e.target.duration.value
+    };
+    saveApplication(application);
+    loadApplications();
+    leaveForm.reset();
+});
+
+loadEmployeeNames();
+loadApplications();
+});
+</script>
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script> -->
+  <!-- End Google Map -->
+
+</body>
+
+</html>
